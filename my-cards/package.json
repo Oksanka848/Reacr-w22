@@ -2,6 +2,7 @@
   "name": "my-cards",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Oksanka848.github.io/Reacr-w22",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,13 +17,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oksanka848/Reacr-w22.git"
   },
   "browserslist": {
     "production": [
@@ -35,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-autofix": "^1.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

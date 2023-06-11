@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "autofix",
+    "react-hooks"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "error"
+  }
+}

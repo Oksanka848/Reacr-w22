@@ -1,0 +1,53 @@
+{
+	"extends": [
+		"react-app", "react-app/jest", "plugin:react-hooks/recommended"
+	],
+	"plugins": [
+		"react", "@typescript-eslint", "autofix"
+	],
+	"rules": {
+		"autofix/non-unused-vars": "warn",
+		"quotes": [
+			"error", "single"
+		],
+		"prefer-const": "error",
+		"max-len": [
+			"warn", {
+				"code": 130
+			}
+		],
+    "semi":["warn", "always"],
+		"arrow-body-style": [
+			"error", "as-needed"
+		],
+		"react/self-closing-comp": [
+			"error", {
+				"component": true,
+				"html": true
+			}
+		],
+		"import/order": [
+			"error", {
+				"groups": [
+					"builtin",
+					"external",
+					"parent",
+					"sibling",
+					"index",
+					"object",
+					"type"
+				],
+				"pathGroups": [
+					{
+						"pattern": "@/**/**",
+						"group": "parent",
+						"position": "before"
+					}
+				],
+				"alphabetize": {
+					"order": "asc"
+				}
+			}
+		]
+	}
+}
